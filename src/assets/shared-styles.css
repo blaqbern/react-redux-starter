@@ -1,0 +1,25 @@
+@font-face {
+  font-family: FiraSans-Medium;
+  src: url(./fonts/FiraSans-Medium.otf);
+}
+
+@font-face {
+  font-family: FiraSans-ExtraLight;
+  src: url(./fonts/FiraSans-ExtraLight.otf);
+}
+
+:global(body) {
+  font-family: FiraSans-ExtraLight;
+}
+
+:global(h1) {
+  margin: 0;
+  padding: 10px;
+  font-family: FiraSans-Medium;
+  color: tomato;
+  border-bottom: 1px solid tomato;
+}
+
+:global(p) {
+  margin-left: 20px;
+}
