@@ -4,5 +4,13 @@ import rootReducer from './rootReducer'
 
 export default function configureStore() {
   const finalCreateStore = DevTools.instrument()(createStore)
-  return finalCreateStore(rootReducer)
+  const store = finalCreateStore(rootReducer)
+
+  if (module.hot) {
+    module.hot.accept('./rootReducer', () =>
+      store.replaceReducer(require('./rootReducer').default)
+    )
+  }
+
+  return store
 }

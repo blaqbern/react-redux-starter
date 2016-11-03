@@ -3,8 +3,8 @@ const {
   DefinePlugin,
   optimize: {
     UglifyJsPlugin,
-    CommonsChunkPlugin,
-  }
+  },
+  HotModuleReplacementPlugin,
 } = require('webpack')
 
 function getPlugins(environment) {
@@ -15,10 +15,10 @@ function getPlugins(environment) {
     }),
   ]
   const dev = [
-    // HotModuleReplacementPlugin(),
+    new HotModuleReplacementPlugin(),
   ]
   const prod = [
-    UglifyJsPlugin(),
+    new UglifyJsPlugin(),
   ]
 
   if (environment === 'development' && dev.length) return [...base, ...dev]
