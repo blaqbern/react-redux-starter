@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-rxjs",
+  "name": "react-redux-starter",
   "version": "0.0.1",
-  "description": "A starter kit for apps built with React, Redux and RxJS with TypeScript and ImmutableJS",
+  "description": "A starter kit for apps built with React and Redux",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV='development' PORT=8090 node devServer",
@@ -9,19 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blaqbern/react-redux-rxjs.git"
+    "url": "git+https://github.com/mobomo/react-redux-starter.git"
   },
   "keywords": [
     "React",
-    "Redux",
-    "RxJS"
+    "Redux"
   ],
   "author": "Chris Blackburn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/blaqbern/react-redux-rxjs/issues"
+    "url": "https://github.com/mobomo/react-redux-starter/issues"
   },
-  "homepage": "https://github.com/blaqbern/react-redux-rxjs#readme",
+  "homepage": "https://github.com/mobomo/react-redux-starter#readme",
   "devDependencies": {
     "babel-core": "^6.18.0",
     "babel-eslint": "^7.1.0",

@@ -1,1 +1,1 @@
-# React Redux Rxjs Starter
+# React Redux Starter
