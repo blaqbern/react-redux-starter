@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { toggleCompleted, removeTodo } from '../redux/actions'
 import styles from './styles/Todo'
 
-function Todo({
+export function Todo({
   todo,
   handleToggleTodo,
   handleRemoveTodo,
@@ -12,7 +12,7 @@ function Todo({
     <div className="root">
       <span
         onClick={handleToggleTodo}
-        className={todo.completed ? styles.completed : undefined}
+        className={todo.completed ? styles.completed : ''}
       >
         {todo.text}
       </span>

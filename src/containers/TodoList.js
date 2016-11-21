@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addTodo } from '../redux/actions'
 import Todo from './Todo'
 
-class TodoList extends Component {
+export class TodoList extends Component {
   state = { inputValue: '' }
   updateInputValue = e => this.setState({ inputValue: e.target.value })
   handleAddClick = () => {
