@@ -6,3 +6,6 @@ rules:
     - never
   require-jsdoc: off
   no-invalid-this: off
+globals:
+  __PROD__: false
+  __DEV__: false
